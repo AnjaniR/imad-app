@@ -3,7 +3,7 @@ var morgan = require('morgan');
 var path = require('path');
 
 var app = express();
-app.use(morgan('combined'));
+app.use(morgan('combined'));         // no need of art-1 art-2 art-3 html files
 
 var articles={
 'article-one':{
