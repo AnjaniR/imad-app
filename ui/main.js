@@ -2,10 +2,15 @@ console.log('Loaded!');
 
 // change text of 'main' div
 var element = document.getElementById('main');
-element.innerHTML='New Value'
+element.innerHTML='New Value';
 
 //move the image
 var img = document.getElementById('madi');
-img.onclick = function(){
-    img.style.marginLeft="100px";
+var moveLeft=0;
+function moveRight(){
+    marginLeft=marginLeft + 10;
+    img.style.marginLeft=marginLeft + 'px';
 }
+img.onclick = function(){
+   var interval=setInterval(moveRight,100);
+};
